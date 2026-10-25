@@ -27,14 +27,12 @@
 ## 第二步：修改（回到制作的那个 AI 会话，把评审结果贴进去）
 
 ```text
-An independent jury reviewed your film. Here is the full review:
-<paste the review>
+一位独立评审团评审了你的影片。以下是完整评审意见：
+<粘贴评审意见>
 
-Raise the film to award level (target ≥ 9 in every dimension):
-- First keep a copy of the current video and source as version N.
-- Implement every critical issue and every high-impact fix. You may substitute a better solution for a listed fix if you are
-  confident; say why. Go beyond the list where you see a bigger upgrade, especially for the wow factor. Do not regress
-  anything the jury listed as a strength.
-- Re-render at full resolution, re-check the spec and look at the frames until the fixes have truly landed.
-- Report which fixes you applied or skipped, and why.
+将影片提升至获奖级水平（目标：每个维度≥9分）：
+- 首先将当前视频和源文件保留为版本N的副本。
+- 落实每一项严重问题和每一项高影响力修复。如果你有信心，可以用更好的方案替代所列的某项修复；但要说明理由。如果发现更大的升级空间，尤其是为了提升惊艳度，可以在清单之外进一步改进。不要使评审团列为优点的任何方面出现退步。
+- 以全分辨率重新渲染，重新检查规格，并查看帧画面，直到修复真正落实到位。
+- 报告你应用或跳过了哪些修复，以及原因。
 ```
