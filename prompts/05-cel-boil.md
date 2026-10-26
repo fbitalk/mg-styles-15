@@ -14,82 +14,60 @@
 ## 提示词
 
 ```text
-You are the director, motion designer, engineer and sound designer of ONE 10-second motion-design film.
-The goal is the most classic, yet most stunning form of this style — award-shortlist / high-end commercial quality. A clean,
-template-looking result is a fail. Benchmarks: Buck, ManvsMachine, Ordinary Folk, Giant Ant, Territory Studio, Apple keynote
-motion, Pentagram motion identities, top Behance/Motionographer features, top 抖音/B站 designer accounts.
+你是这部动态设计影片的导演、动态设计师、工程师和声音设计师。目标是呈现这种风格最经典、同时最惊艳的形态——获奖入围/高端商业品质。干净、模板感的结果即为失败。标杆：Buck、ManvsMachine、Ordinary Folk、Giant Ant、Territory Studio、Apple主题演讲动态、Pentagram动态识别、Behance/Motionographer精选、抖音/B站顶级设计师账号。
 
-# Style
+# 风格
 逐帧手绘 / 线条沸腾 Cel Animation / Frame-by-Frame & Line Boil
 
-# Output (fixed)
-- 1920×1080, 24 fps, exactly 10.000 s (240 frames), H.264 MP4 with stereo AAC audio (48 kHz), mastered to −14 LUFS
-  integrated, true peak ≤ −1 dBTP. Final file: video.mp4.
+# 输出（固定）
+- 1920×1080，24 fps，H.264 MP4，立体声AAC音频（48 kHz），母带处理至−14 LUFS积分响度，真峰值≤−1 dBTP。最终文件：video.mp4。
 
-# Suggested technical route
-HTML Canvas2D: custom variable-width brush renderer (centreline + pressure → outline polygon), boil = 3–4 jitter variants cycled every 2 frames; paper texture multiply
-(You may choose a better route if it clearly raises quality; say why.)
+# 建议技术路线
+HTML Canvas2D：自定义可变宽度笔刷渲染器（中心线+压力→轮廓多边形），沸腾=每2帧循环3–4个抖动变体；纸张纹理正片叠底
+（如果明显能提升质量，你可以选择更好的路线；说明理由。）
 
-# Creative seed
-「手作魔法」Hand-made frame-by-frame magic, Buck/Giant-Ant hybrid (clean shapes + hand-drawn cel FX), animated on 2s at 24 fps.
-- Warm paper ground; ink linework that BOILS (lines redrawn with slight variation every 2 frames); fills slightly off-register like hand colouring.
-- Story: a matchstick strikes (SMEAR frame, on 1s for the fast action) → a flame spirit character jumps out, anticipation + squash, dances (on 2s) → it bursts into cel FX: smoke puffs curling, sparks, star bursts, speed lines → the FX re-form into hand-lettered title (e.g. "HAND MADE" or 手作) that keeps boiling on a 1s hold (on 3s for the hold).
-- Palette 3–4 colours: ink black, tomato red, sunny yellow, cream paper; paper grain multiply 10–15%.
-Sound: playful jazzy pizzicato/xylophone bed + cartoon SFX: strike, fwoosh, pop, poof, sparkle — synced to the frame.
+# 创意种子
+「手作魔法」Hand-made frame-by-frame magic，Buck/Giant-Ant混合体（干净形状+手绘cel FX），24 fps下按一拍二制作。
+- 温暖纸底；会沸腾的墨线（线条每2帧重绘并带有轻微变化）；填充略微套印不准，像手工上色。
+- 故事：一根火柴被划燃（拖影帧，快速动作按一拍一）→一个火焰精灵角色跳出，预备+挤压，跳舞（一拍二）→它爆发成cel FX：卷曲的烟雾团、火花、星爆、速度线→FX重新组合成手写标题（例如"HAND MADE"或"手作"），在保持段持续沸腾（保持段按一拍三）。
+- 调色板3–4色：墨黑、番茄红、阳光黄、奶油纸色；纸纹正片叠底10–15%。
+声音：俏皮的爵士拨弦/木琴铺底+卡通音效：划燃、嗖、啪、噗、闪光——与帧同步。
 
-You are the director: you may change the concept, copy, story beats and brand names if you find a stronger idea, but the result must remain the CANONICAL, instantly-recognisable form of this style and must hit its signature features below.
+你是导演：如果你找到更强的想法，可以改变概念、文案、故事节拍和品牌名称，但结果必须保持这种风格经典且一眼可辨的形态，并且必须命中下方的标志性特征。
 
-# Signature features and key techniques (the result is judged against these)
-手绘逐帧或在矢量动画上叠加逐帧质感，标志性特征是 line boil——线条每隔几帧轻微抖动，仿佛画面在'呼吸'。Giant Ant、Buck 等工作室大量使用 cel 元素（烟、水花、速度线）点缀主动画，反数字精致感的核心手段。
-视觉特征 线条持续微抖(boil), 一拍二/一拍三节奏, smear拖影帧, 手绘烟火水花点缀, 纸纹底
-关键技法 打帧节奏：24fps 下'一拍二'（实际12fps）为主，快动作切'一拍一'，静止镜头'一拍三'
-line boil 伪造法：AE 用 Turbulent Displace（数量2~5、大小50）+ 每 2 帧随机化 evolution + Posterize Time 12fps；真 boil 则画 3~4 张微差线稿循环
-smear frame：快速位移的中间帧把物体拉长 150%~300% 只保留 1 帧
-cel FX 点缀层：烟/水花/闪电用纯手绘逐帧叠在矢量主体上（Buck 式 hybrid）
-整体叠纸纹（multiply 10~15%）统一手作气质
+# 标志性特征与关键技法（结果将据此评判）
+手绘逐帧或在矢量动画上叠加逐帧质感，标志性特征是line boil——线条每隔几帧轻微抖动，仿佛画面在"呼吸"。Giant Ant、Buck等工作室大量使用cel元素（烟、水花、速度线）点缀主动画，是反数字精致感的核心手段。
+视觉特征 线条持续微抖（boil），一拍二/一拍三节奏，smear拖影帧，手绘烟火水花点缀，纸纹底
+关键技法 打帧节奏：24fps下"一拍二"（实际12fps）为主，快动作切"一拍一"，静止镜头"一拍三"
+line boil伪造法：AE用Turbulent Displace（数量2~5、大小50）+每2帧随机化evolution+Posterize Time 12fps；真boil则画3~4张微差线稿循环
+smear frame：快速位移的中间帧把物体拉长150%~300%，只保留1帧
+cel FX点缀层：烟/水花/闪电用纯手绘逐帧叠在矢量主体上（Buck式hybrid）
+整体叠纸纹（正片叠底10~15%）统一手作气质
 
-# How to work
-1. Treatment. Write down one clear idea: a hook in the first 0.5 s (never open on more than 0.3 s of empty or black), an
-   escalation, one unmistakable hero moment at ~60–75 % of the runtime, and a composed end frame held ~0.8–1.2 s with living
-   micro-motion. Map every signature feature above to a moment. Keep one cue sheet (beats and hit times) that both the
-   picture and the sound read from.
-2. Key frames before motion. Build the look, render stills at 6–10 key times and actually look at them. Each still should be
-   poster-worthy: composition, hierarchy, negative space, type set properly (kerning, line-height, weight contrast, CJK
-   punctuation, ~5 % safe margins). Iterate until nothing looks default, generic, cramped or "AI-template".
-3. Motion. Build the choreography and preview at low resolution. Step through the fastest moves frame by frame: spacing,
-   easing, arcs, overlap, anticipation and follow-through, motion blur. No unintended dead spans; the energy follows the music.
-4. Sound. Write genre-correct music and sound design locked to the cue sheet. Check that visual hits land on audio onsets.
-   Master to the output spec.
-5. Final. Render at full resolution (motion blur where apt), then check: exactly 10.00 s, resolution, fps, audio present and at
-   the right loudness, no black frames, no fallback fonts or tofu, no clipped elements at the frame edges, no shimmer on thin
-   lines, no gradient banding. Fix and repeat until you would submit it to a festival.
-6. Write an honest self-critique: what is strongest, what is weakest, what you would do with more time.
+# 工作方法
+1. Treatment。写下唯一清晰的创意：前段部分有钩子（绝不以长时间的空场或黑场开场），有递进升级，在约60–75%时长处有一个明确无误的高光时刻，以及一个有构图的结尾画面，保持约0.8–1.2秒并带有活的微动。将上述每一项标志性特征映射到具体时刻。维护一份提示表（节拍与命中时间），画面和声音都依据它来执行。
+2. 先有关键帧，再有运动。先建立外观，在6–10个关键时间点渲染静帧并实际查看。每一张静帧都应具备海报级水准：构图、层级、负空间、字体排版得当（字距、行高、字重对比、中文标点、约5%安全边距）。反复迭代，直到没有任何地方显得默认、通用、局促或"AI模板"。
+3. 运动。构建编排并以低分辨率预览。逐帧检查最快的动作：间距、缓动、弧线、重叠、预备与跟随、运动模糊。没有意外的死寂片段；能量跟随音乐。
+4. 声音。编写类型正确的音乐和声音设计，锁定到提示表。检查视觉冲击是否落在音频起音上。母带处理至输出规格。
+5. 最终。以全分辨率渲染（适当时带运动模糊），然后检查：精确10.00秒、分辨率、帧率、音频存在且响度正确、无黑帧、无回退字体或豆腐块、无元素在画面边缘被裁切、细线上无闪烁、无渐变色带。修复并重复，直到你愿意将其提交至电影节。
+6. 写一份诚实的自我批评：最强的是什么，最弱的是什么，如果有更多时间你会做什么。
 
-# Rules
-- Rendering must be deterministic: every frame is a pure function of time t. Seeded randomness only; physics and particles
-  precomputed or closed-form; no real-time clocks; no state-triggered CSS transitions. A reliable route: a web page that can
-  draw any time t on request, captured frame by frame with a headless browser and encoded with ffmpeg (or a Blender script
-  that renders a PNG sequence).
-- Assets: only CC0 / public domain / OFL / Apache / free-for-commercial-use. Record each source and licence in CREDITS.md.
-  No real brand trademarks; invent brand names.
-- On-screen text must be correct and natural: idiomatic Chinese, proper CJK punctuation, no typos.
+# 规则
+- 渲染必须具有确定性：每一帧都是时间t的纯函数。仅使用带种子的随机性；物理和粒子预计算或闭式求解；不使用实时时钟；不使用状态触发的CSS过渡。可靠路线：一个能按请求绘制任意时间t的网页，用无头浏览器逐帧捕获并用ffmpeg编码（或一个渲染PNG序列的Blender脚本）。
+- 素材：仅限CC0/公有领域/OFL/Apache/可免费商用的素材。在CREDITS.md中记录每个来源和许可。不使用真实品牌商标；虚构品牌名称。
+- 屏幕文字必须正确且自然：地道中文、正确的中文标点、无错别字。
 
-# Craft checklist (what a jury looks for)
-- Style authenticity: an expert names the style in one second; every signature technique is present and executed correctly.
-- Motion craft: purposeful easing (no linear unless mechanical by design), overlap and stagger, anticipation and
-  follow-through, arcs, squash and stretch where the style allows, consistent physics, motion blur where apt; transitions
-  carried by elements, not crossfades.
-- Rhythm: hits locked to the music; contrast between busy and calm; no monotony.
-- Design: strong composition, grid, typographic hierarchy, controlled palette; texture and finishing (grain, glow, vignette)
-  only where the style wants it; nothing looks accidental.
-- Technical polish: no jitter (unless intended), no popping, no aliasing, no banding, no fallback fonts, no half-loaded images.
-- Sound: genre-correct, musical, synced, mastered.
+# 技艺检查清单（评审团关注什么）
+- 风格真实性：专家能在一秒内说出风格；每一项标志性技法都存在且执行正确。
+- 运动技艺：有目的的缓动（除机械性设计外不用线性）、重叠与错峰、预备与跟随、弧线、风格允许处的挤压与拉伸、一致的物理、适当的运动模糊；转场由元素承载，而非交叉淡化。
+- 节奏：冲击与音乐锁定；忙碌与平静之间有对比；不单调。
+- 设计：强构图、网格、字体层级、受控的调色板；仅在风格需要处使用纹理与收尾（颗粒、辉光、暗角）；没有任何东西看起来是偶然的。
+- 技术精致度：无抖动（除非有意）、无跳变、无锯齿、无色带、无回退字体、无半加载图像。
+- 声音：类型正确、有音乐性、同步、母带处理到位。
 
-# Before you deliver, score yourself honestly
-1–10 on style fidelity, concept wow, motion craft, design & typography, finish & texture, sound & sync, technical
-(6 = template-level, 8 = high-end agency, 9 = award shortlist). Aim for 9; fix whatever scores lowest first.
+# 交付前，诚实地给自己打分
+风格还原度、概念惊艳度、运动技艺、设计与字体排版、完成度与质感、声音与同步、技术，各按1–10打分（6=模板水平，8=高端代理公司，9=获奖入围）。目标为9；优先修复得分最低的项。
 
-# Deliver
-video.mp4, plus a short report: the concept in two sentences; a beat sheet with timecodes; how each signature feature is
-realised; the tech route; check numbers (duration, resolution, fps, loudness, true peak); your honest top-3 weaknesses.
+# 交付
+video.mp4，外加一份简短报告：用两句话说明概念；带时间码的节拍表；每一项标志性特征如何实现；技术路线；检查数值（时长、分辨率、帧率、响度、真峰值）；你诚实的前三大弱点。
 ```
